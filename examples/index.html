@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jQuery CompHist Plugin Example</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/jquery.comphist.css">
+    <script language="javascript" type="text/javascript" src="../jquery-1.4.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../jquery.comphist.js"></script>
+ </head>
+    <body>
+    <h1>jQuery CompHist Plugin Example</h1>
+
+    <div id="placeholder" style="width: 375px; height: 200px;"></div>
+
+    <p>With the jQuery Comparative Histogram (CompHist) Plugin you can easily
+    represent populations and information about them. A prime usage exampe
+    of this is demographics. All the styling is done via CSS. Hence the
+    style is all easily modified. It does the calculations for you and it
+    allows for non listed group counts via a non_demo_count data option.</p>
+    
+<script type="text/javascript">
+$(function () {
+  var comphist_data = {
+    population_label: 'Active Fans This Week',
+    group_1_label: 'Male', group_2_label: 'Female',
+    subgroups: [
+    { label: '13-17', group_1_count: 3, group_2_count: 16 },
+    { label: '18-24', group_1_count: 7, group_2_count: 27 },
+    { label: '25-34', group_1_count: 3, group_2_count: 29 },
+    { label: '35-44', group_1_count: 2, group_2_count: 9 },
+    { label: '45-54', group_1_count: 0, group_2_count: 4 },
+    { label: '55+', group_1_count: 0, group_2_count: 0 }
+    ],
+    non_demo_count: 0
+  };
+  $("#placeholder").comphist({}, comphist_data);
+});
+</script>
+ </body>
+</html>

@@ -1,0 +1,192 @@
+/* Any styles I want applied to the entier widget. */
+.ui-comphist-widget {
+}
+
+/* Styles I want applied to everything but the header */
+.ui-comphist-pseudotable {
+  width: 100%;
+  height: .80em; /* this + ui-comphist-header font-size must equal 1em */
+}
+
+.ui-comphist-header {
+  width: 100%;
+  /* Note: I am using em's so that the resulting cotent scales appropriately
+   * whene it is zoomed in a browser. Hence, as the font gets larger the
+   * divs, etc appropriately grow. */
+  height: 1em; /* this just defines the height to be equal to the font-size */
+  font-size: 0.15em; /* this + ui-comphist-separators height must equal 1em */
+  border-bottom: 0.08em solid lightgrey;
+}
+
+.ui-comphist-pop-size {
+  font-weight: bold;
+  font-size: 1em;
+  color: #000000;
+}
+
+.ui-comphist-sum-val {
+
+  padding-top: .45em;
+  padding-left: .2em;
+  padding-right: .2em;
+  font-size: .065em;
+  font-weight: bold;
+}
+
+.ui-comphist-pop-label {
+  text-align: left;
+  color: grey;
+  font-size: 0.5em;
+}
+
+.ui-comphist-bars-col {
+  float: left;
+  width: 27%;
+  height: 100%;
+}
+
+.ui-comphist-subgroup-label-col {
+  float: left;
+  width: 15%;
+  height: 100%;
+}
+
+.ui-comphist-subgroup-col {
+  float: left;
+  width: 11%;
+  height: 100%;
+}
+
+.ui-comphist-totals-col {
+  float: left;
+  width: 9%;
+  height: 100%;
+}
+
+.ui-comphist-label-row {
+  height: .10em;
+  width: 100%;
+  border-bottom: solid 1px lightgrey;
+}
+
+.ui-comphist-sum-row {
+  height: .12em;
+  width: 100%;
+  border-top: solid 1px lightgrey;
+}
+
+.ui-comphist-subgroup-label {
+  padding-top: .4em;
+  font-size: .057em;
+  font-weight: bold;
+}
+
+.ui-comphist-subgroup-val {
+  padding-top: .4em;
+  padding-right: .5em;
+  padding-left: .5em;
+  font-size: .057em;
+  font-weight: normal;
+}
+
+.ui-comphist-subgroup-tot-val {
+  padding-top: .4em;
+  font-size: .057em;
+  font-weight: bold;
+}
+
+.ui-comphist-subgroup-row {
+  height: .09em;
+  width: 100%;
+  border-top: solid 1px lightgrey;
+}
+
+.ui-comphist-row-left {
+  border-right: dotted 1px lightgrey;
+}
+
+.ui-comphist-left-row {
+  border-right: dotted 1px lightgrey;
+}
+
+.ui-comphist-spacer {
+  height: .05em;
+  width: 100%;
+}
+
+.ui-comphist-left {
+  float: right;
+}
+
+.ui-comphist-right {
+  float: left;
+}
+
+.ui-comphist-sum-bar {
+  height: .11em;
+  background-color: red;
+  margin: .005em;
+}
+
+.ui-comphist-bar {
+  height: .08em;
+  background-color: pink;
+  margin: .005em;
+}
+
+.ui-comphist-group-label {
+  color: black;
+  font-size: .055em;
+  font-weight: bold;
+}
+
+.ui-comphist-left-label {
+  float: right;
+  text-align: right;
+  padding-right: 0.30em;
+  padding-top: .5em;
+}
+
+.ui-comphist-right-label {
+  float: left;
+  text-align: left;
+  padding-left: 0.30em;
+  padding-top: .5em;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+
+.ui-comphist-percents-label-row {
+  
+}
+
+.ui-comphist-total-row {
+  
+}
+
+.ui-comphist-bg {
+  background-color: white;
+}
+
+.ui-comphist-header-separator {
+  height: 10px;
+  margin-top: 4px;
+  background-color: white;
+}
+
+
+.ui-comphist-subgroup-label {
+  color: black;
+}
+
+
+
+
+.ui-comphist-bar {
+  
+}
+
+.ui-comphist-subbar {
+  
+}
