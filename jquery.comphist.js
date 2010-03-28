@@ -320,7 +320,7 @@ jQuery.fn.comphist = function(options, data) {
     });
   }
   
-  var perc_data = null;
+  var proc_data = null;
   if (validDataFormat(data)) {
     proc_data = procData(data);
     renderData(this, proc_data);
