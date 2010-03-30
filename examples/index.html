@@ -20,6 +20,21 @@
     
 <script type="text/javascript">
 $(function () {
+  
+  function showTooltip(x, y, contents) {
+    console.log("called my shit");
+    $('<div id="tooltip">' + contents + '</div>').css({
+      position: 'absolute',
+      display: 'none',
+      top: y - 20,
+      left: x - 30,
+      border: '1px solid #fdd',
+      padding: '2px',
+      'background-color': '#fee',
+      opacity: 1
+    }).appendTo("body").fadeIn(200);
+  }
+  
   var comphist_data = {
     population_label: 'Active Fans This Week',
     group_1_label: 'Male', group_2_label: 'Female',
@@ -34,6 +49,16 @@ $(function () {
     non_demo_count: 0
   };
   $("#placeholder").comphist({}, comphist_data);
+  
+  $("#placeholder").bind("barover", function (e, perc, pos) {
+    $("#tooltip").remove();
+    showTooltip(pos.left, pos.top, perc);
+  });
+  
+  $("#placeholder").bind("barout", function (e, perc, pos) {
+    $("#tooltip").remove();
+  });
+  
 });
 </script>
  </body>
